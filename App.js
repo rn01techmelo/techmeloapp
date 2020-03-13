@@ -64,7 +64,6 @@ const styles = StyleSheet.create({
   scrollView: {
     backgroundColor: Colors.lighter,
   },
-
 });
 
 export default App;
