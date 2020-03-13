@@ -41,7 +41,7 @@ class HomeScreen extends Component {
       'Login',
       'Do you want to Login it ?',
       [
-        { text: 'Home', onPress: () => this.navigate1('home'), style: 'cancel' },
+        { text: 'Login', onPress: () => this.navigate1('login'), style: 'cancel' },
       //  { text: 'Yes', onPress: () => this.delete_files() },
       ],
       // { cancelable: false }
@@ -57,7 +57,7 @@ render() {
         <View style={styles.body}>
       
         <TouchableOpacity style={styles.greyButtonH10W50} onPress={()=>this.ask_login()}>
-            <Text style={styles.greyButtonH10W50Text}>Go Home</Text>
+            <Text style={styles.greyButtonH10W50Text}>Login</Text>
         </TouchableOpacity>
      
         </View>

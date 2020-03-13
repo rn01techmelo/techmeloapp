@@ -8,12 +8,9 @@
 import 'react-native-gesture-handler';
 import React from 'react';
 import {
-  SafeAreaView,
+
   StyleSheet,
-  ScrollView,
-  View,
-  Text,
-  StatusBar,
+
 } from 'react-native';
 
 import {
@@ -32,7 +29,7 @@ const App = () => {
   return (
    
         <NavigationContainer>
-            <Stack.Navigator initialRouteName="home">
+            <Stack.Navigator initialRouteName="login">
               <Stack.Screen name="home" component={HomeScreen} />
               <Stack.Screen name="login" component={LoginScreen} />
             </Stack.Navigator>

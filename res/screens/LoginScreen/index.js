@@ -56,7 +56,7 @@ render() {
       <View style={styles.container}>
         <View style={styles.body}>
          <TouchableOpacity style={styles.greyButtonH10W50} onPress={()=>this.ask_login()}>
-            <Text style={styles.greyButtonH10W50Text}>Go Home</Text>
+            <Text style={styles.greyButtonH10W50Text}>Home</Text>
          </TouchableOpacity>
         </View>
       </View>
