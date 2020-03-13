@@ -21,41 +21,22 @@ import {
 } from 'react-native/Libraries/NewAppScreen';
 
 import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
 
-import Home from './Home';
-import Two from './Two';
+import HomeScreen from './res/screens/HomeScreen';
+import LoginScreen from './res/screens/LoginScreen';
+
+const Stack = createStackNavigator();
 
 const App = () => {
   return (
-
-     
-      <SafeAreaView>
-      <StatusBar barStyle="dark-content" />
-        <ScrollView
-          contentInsetAdjustmentBehavior="automatic"
-          style={styles.scrollView}>   
-        <NavigationContainer>{
-          
-        //   {
-        //    home: {
-        //     screen: Home,
-        //   },
-        //   two: {
-        //     screen: Two,
-        //   },
- 
-        // },{
-        //   initialRouteName: "home",
-        //   navigationOptions: {
-        //     header: null,
-        //     headerMode: 'none'
-        //   },
-        // }
-         
-          }</NavigationContainer> 
-     
-        </ScrollView>
-      </SafeAreaView>
+   
+        <NavigationContainer>
+            <Stack.Navigator initialRouteName="home">
+              <Stack.Screen name="home" component={HomeScreen} />
+              <Stack.Screen name="login" component={LoginScreen} />
+            </Stack.Navigator>
+        </NavigationContainer> 
 
   );
 };

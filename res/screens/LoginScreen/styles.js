@@ -1,3 +1,4 @@
+  
 
 import {
 
@@ -25,11 +26,13 @@ export default  styles=StyleSheet.create({
     greyButtonH10W50:{
        height:10,
        width:50,
-       backgroundColor:'#d3d3d3' 
+       backgroundColor:'#d3d3d3',
+       alignItems:'center',
+       justifyContent:'center' 
     },
-    
     greyButtonH10W50Text:{
         color:'#333',
         fontSize:15
     },
+    
     });
