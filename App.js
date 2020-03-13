@@ -17,12 +17,13 @@ import {
 } from 'react-native';
 
 import {
-
-  Colors,
-
+  Colors
 } from 'react-native/Libraries/NewAppScreen';
 
 import { NavigationContainer } from '@react-navigation/native';
+
+import Home from './Home';
+import Two from './Two';
 
 const App = () => {
   return (
@@ -32,25 +33,25 @@ const App = () => {
       <StatusBar barStyle="dark-content" />
         <ScrollView
           contentInsetAdjustmentBehavior="automatic"
-          style={styles.scrollView}>
+          style={styles.scrollView}>   
         <NavigationContainer>{
-          /** 
-          {
-           home: {
-            screen: Home,
-          },
-          show1: {
-            screen: Show1,
-          },
+          
+        //   {
+        //    home: {
+        //     screen: Home,
+        //   },
+        //   two: {
+        //     screen: Two,
+        //   },
  
-        },{
-          initialRouteName: "home",
-          navigationOptions: {
-            header: null,
-            headerMode: 'none'
-          },
-        }
-         */ 
+        // },{
+        //   initialRouteName: "home",
+        //   navigationOptions: {
+        //     header: null,
+        //     headerMode: 'none'
+        //   },
+        // }
+         
           }</NavigationContainer> 
      
         </ScrollView>
