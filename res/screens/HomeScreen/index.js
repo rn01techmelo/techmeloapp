@@ -44,7 +44,7 @@ class HomeScreen extends Component {
         { text: 'Login', onPress: () => this.navigate1('login'), style: 'cancel' },
         { text: 'Yes', onPress: () => this.delete_files() },
       ],
-      // { cancelable: false }
+      { cancelable: false }
     );
 
   }
